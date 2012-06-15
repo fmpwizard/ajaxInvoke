@@ -7,7 +7,7 @@ class ajaxInvoke{
   def render = {
     "#button [onclick]" #> SHtml.ajaxInvoke{ () =>
       JsCmds.Alert("Got it!")
-    }._2.cmd &
+    } &
     "#button2 [onclick]" #> (SHtml.ajaxInvoke{ () =>
       JsCmds.Alert("Got it!")
     }._2.cmd.toJsCmd + "return false;")

@@ -7,12 +7,14 @@
 <body class="lift:content_id=main">
 <div id="main" class="lift:surround?with=default;at=content">
     <h2>Welcome to your project!</h2>
-    <div data-lift="lift:ajaxInvoke?form=post">
+    <form action="#">
+      <div data-lift="lift:ajaxInvoke">
         <div>
-            Does full page reload: <input type="submit" value="Submit" id="button"><br>
-            Does ajax submit:<input type="submit" value="Submit" id="button2">
+          Does full page reload: <input type="submit" value="Submit" id="button"><br>
+          Does ajax submit:<input type="submit" value="Submit" id="button2">
         </div>
-    </div>
+      </div>
+    </form>
 </div>
 </body>
 </html>
